@@ -6,16 +6,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* background: url(images/bg-hero-mobile.svg) no-repeat; */
-    background-size: contain;
     background-color: hsl(0, 4%, 95%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 20px;
     font-size: 18px;
+    margin: 0;
 }
 
 button, a {
@@ -23,16 +21,23 @@ button, a {
 }
 
 header {
-    width: 400px;
-    margin: auto auto;
+    background: url(images/bg-hero-mobile.svg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-color: hsl(193, 100%, 96%);
     color:hsl(192, 100%, 9%);
     text-align: center;
+    padding: 25px;
 }
 
 header .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo img {
+    width: 50%;
 }
 
 .logo button {
@@ -82,7 +87,7 @@ header .presentation-container {
 }
 
 section article {
-    width: 400px;
+    width: 350px;
     background-color: #fff;
     border-radius: 8px;
     margin: 40px 0 40px 0;
@@ -109,4 +114,86 @@ section .community-building {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    transform: translateY(50%);
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+}
+
+footer div:not(div:last-child) {
+    margin-bottom: 40px;
+}
+
+.contact-us {
+    margin-top: 40px;
+}
+
+.contact-us img:not(img:first-child) {
+    display: block;
+    transform: translateY(130%);
+}
+
+.contact-us img:first-child {
+    margin: 30px 0;
+}
+
+.contact-us address {
+    display: inline-block;
+    margin-left: 32px;
+    font-style: normal;
+}
+
+address:first-child {
+    width: 40%;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.links a:active, 
+.links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a i {
+    margin: 10px;
+    padding: 12px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.social-media a i:active,
+.social-media a i:hover {
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+
+.social-media small {
+    font-size: 12px;
+}
+
+@media(min-width: 768px) {
+    section article {
+        width: 700px;
+    }
 }
