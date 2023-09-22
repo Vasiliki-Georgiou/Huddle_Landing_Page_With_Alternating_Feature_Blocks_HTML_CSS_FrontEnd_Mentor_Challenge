@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: hsl(0, 4%, 95%);
+    background-color: hsl(0, 100%, 99%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@ section article {
     align-items: center;
     padding: 28px;
     text-align: center;
-    border: 2px solid hsl(0, 4%, 95%);
+    border: 2px solid hsl(0, 4%, 95%, 0.7);
 }
 
 section article img {
@@ -128,12 +128,8 @@ footer {
     width: 100%;
 }
 
-footer div:not(div:last-child) {
-    margin-bottom: 40px;
-}
-
 .contact-us {
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .contact-us img:not(img:first-child) {
@@ -196,4 +192,109 @@ address:first-child {
     section article {
         width: 700px;
     }
+
+    .presentation button, .community-building button {
+        width: 30%;
+    }
 }
+
+@media(min-width: 1024px) {
+
+    header {
+        background: url(images/bg-hero-desktop.svg) no-repeat;
+        background-size: contain;
+        width: 100%;
+        background-color: hsl(193, 100%, 96%);
+        color:hsl(192, 100%, 9%);
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    header .logo {
+        justify-content: space-between;
+        margin: 0 60px;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .logo button {
+        width: 10%;
+    }
+
+    .presentation-container {
+        display: flex;
+    }
+
+    .presentation-container .presentation,
+    .presentation-container .wireframes {
+        width: 50%;
+    }
+
+    .presentation {
+        margin: auto;
+        padding: 32px;
+    }
+
+    .presentation h1 {
+        font-size: 2rem;
+    }
+
+    .wireframes img {
+        width: 85%;
+    }
+
+    section article:not(article:last-child) {
+        width: 900px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        border-radius: 20px;
+    }
+
+    section article img {
+        width: 50%;
+        margin: 25px 0 25px 25px;
+        order: 3;
+    }
+
+    section article:nth-child(even) img {
+        order: -1;
+    }
+
+    section article:last-child {
+        transform: translate(12.5%, 50%);
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    footer div {
+        width: 33%;
+        margin: auto auto;
+    }
+
+    .links, .social-media {
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(40%);
+    }
+
+    footer .links a {
+        display: block;
+        line-height: 12px;
+    }
+
+    .social-media div {
+        width: 100%;  
+    }
+    .social-media div:first-child {
+        margin-bottom: 100px;
+    }
+    }
