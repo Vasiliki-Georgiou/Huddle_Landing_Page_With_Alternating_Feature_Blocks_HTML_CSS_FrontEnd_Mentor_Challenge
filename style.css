@@ -6,11 +6,107 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+    /* background: url(images/bg-hero-mobile.svg) no-repeat; */
+    background-size: contain;
+    background-color: hsl(0, 4%, 95%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding-top: 20px;
+    font-size: 18px;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+header {
+    width: 400px;
+    margin: auto auto;
+    color:hsl(192, 100%, 9%);
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo button {
+    width: 35%;
+    padding: 12px;
+    border-radius: 18px;
+    border: 0;
+    color: inherit;
+    background-color: #fff;
+    font-weight: 700;
+    box-shadow: 3px 3px 5px hsl(193, 100%, 96%, 0.5);
+}
+
+.logo button:active {
+    background-color: hsl(0, 0%, 100%, 0.9);
+    color: hsl(208, 11%, 55%);
+}
+
+header .presentation-container {
+    margin-top: 60px;
+}
+
+.presentation h1, h3 {
+    font-family: 'Poppins', sans-serif;
+    color:hsl(192, 100%, 9%);
+}
+
+.presentation button, .community-building button {
+    margin: 25px 0;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    width: 60%;
+    padding: 12px;
+    border-radius: 18px;
+    border: 0;
+    font-weight: 700;
+    box-shadow: 3px 3px 5px hsl(322, 100%, 66%, 0.5);
+}
+
+.presentation button:active, .community-building button:active {
+    background-color: hsl(322, 100%, 80%, 1);
+}
+
+.wireframes img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+section article {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+    text-align: center;
+    border: 2px solid hsl(0, 4%, 95%);
+}
+
+section article img {
+    width: 70%;
+    order: -1;
+    margin: 25px 0;
+}
+
+section article p {
+    color: hsl(208, 11%, 55%);
+}
+
+section .community-building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
